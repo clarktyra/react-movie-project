@@ -68,7 +68,7 @@ class Movie extends Component {
                     <div>
                         <Navigation movie={this.props.location.movieName} />
                         <MovieInfo movie={this.state.movie} directors={this.state.directors} />
-                        <MovieInfoBar time={this.state.runtime} budget={this.state.movie.budget} revenue={this.state.revenue} />
+                        <MovieInfoBar time={this.state.movie.runtime} budget={this.state.movie.budget} revenue={this.state.movie.revenue} />
                     </div>
                     : null}
                 {this.state.actors ?

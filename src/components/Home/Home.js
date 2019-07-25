@@ -72,7 +72,7 @@ class Home extends Component {
                 currentPage: result.page,
                 totalPages: result.total_pages
             }, () => {
-                if (this.state.searchTerm == ''){
+                if (this.state.searchTerm === ''){
                     localStorage.setItem('HomeState', JSON.stringify(this.state))
                 }
             })
