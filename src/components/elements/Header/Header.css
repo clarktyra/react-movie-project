@@ -46,7 +46,7 @@
   /* float: right; */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 710px) {
   .rmdb-header-title {
     color: white;
     /* padding-right: 100px; */

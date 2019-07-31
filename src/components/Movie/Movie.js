@@ -32,7 +32,7 @@ class Movie extends Component {
         fetch(endpoint)
             .then(result => result.json())
             .then(result => {
-                console.log(result)
+                // console.log(result)
                 if (result.status_code) {
                     this.setState({ loading: false });
                 } else {
@@ -62,6 +62,8 @@ class Movie extends Component {
 
 
     render() {
+        console.log(this.state);
+
         return (
             <div className="rmdb-movie">
                 {this.state.movie ?
